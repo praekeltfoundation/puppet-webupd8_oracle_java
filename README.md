@@ -1,4 +1,4 @@
-# puppet-webupd8-oracle-java
+# puppet-webupd8_oracle_java
 Puppet module to manage the installation of the [WebUpd8 Oracle Java Installer PPA](https://launchpad.net/~webupd8team/+archive/ubuntu/java). This installs the Oracle JDK.
 
 **NOTE:** By using this module you will automatically accept the [Oracle license agreement](http://www.oracle.com/technetwork/java/javase/terms/license/index.html) for Java SE.
