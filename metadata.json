@@ -1,0 +1,35 @@
+{
+  "name": "praekeltfoundation-webupd8-oracle-java",
+  "version": "0.1.0",
+  "author": "Jamie Hewland",
+  "summary": "Module to manage the installation of the WebUpd8 Oracle Java Installer PPA",
+  "license": "BSD",
+  "source": "https://github.com/praekeltfoundation/puppet-webupd8-oracle-java",
+  "project_page": "https://github.com/praekeltfoundation/puppet-webupd8-oracle-java",
+  "issues_url": "https://github.com/praekeltfoundation/puppet-webupd8-oracle-java/issues",
+  "dependencies": [
+    {
+      "name": "puppetlabs/apt"
+    }
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">=3.4.0 < 4.0.0"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "10.04",
+        "12.04",
+        "14.04",
+        "14.10",
+        "15.04",
+        "15.10",
+        "16.04"
+      ]
+    }
+  ]
+}
