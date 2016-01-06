@@ -2,7 +2,9 @@
 #
 # Install Oracle Java for Ubuntu from the Web Upd8 PPA
 # https://launchpad.net/~webupd8team/+archive/ubuntu/java
-# NOTE: Installing this module means that you have accepted the Oracle license agreement
+#
+# NOTE: Installing this module means that you have accepted the Oracle license
+# agreement
 #
 # === Parameters
 #
@@ -21,8 +23,8 @@ class webupd8_oracle_java (
   $responsefile = "/var/cache/debconf/${package}.preseed"
 
   file { $responsefile:
-    content => "${package} shared/accepted-oracle-license-v1-1 select true",
     ensure  => present,
+    content => "${package} shared/accepted-oracle-license-v1-1 select true",
   }
 
   package { $package:

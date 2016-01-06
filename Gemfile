@@ -5,4 +5,7 @@ group :test do
   gem 'puppet', puppetversion
 
   gem 'librarian-puppet'
+  gem 'puppet-lint'
+  gem 'rake'
+  gem 'rspec-puppet'
 end
