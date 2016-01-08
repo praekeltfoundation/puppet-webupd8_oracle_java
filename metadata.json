@@ -3,7 +3,7 @@
   "version": "0.1.1",
   "author": "Jamie Hewland",
   "summary": "Module to manage the installation of the WebUpd8 Oracle Java Installer PPA",
-  "license": "BSD",
+  "license": "BSD-3-Clause",
   "source": "https://github.com/praekeltfoundation/puppet-webupd8_oracle_java",
   "project_page": "https://github.com/praekeltfoundation/puppet-webupd8_oracle_java",
   "issues_url": "https://github.com/praekeltfoundation/puppet-webupd8_oracle_java/issues",
