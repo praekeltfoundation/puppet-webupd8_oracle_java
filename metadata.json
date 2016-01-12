@@ -1,6 +1,6 @@
 {
   "name": "praekeltfoundation-webupd8_oracle_java",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Jamie Hewland",
   "summary": "Module to manage the installation of the WebUpd8 Oracle Java Installer PPA",
   "license": "BSD-3-Clause",
