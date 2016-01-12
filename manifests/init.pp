@@ -17,6 +17,7 @@ class webupd8_oracle_java (
   $ensure  = 'installed',
   $version = '8',
 ) {
+  include apt
   apt::ppa { 'ppa:webupd8team/java': }
 
   $package = "oracle-java${version}-installer"
