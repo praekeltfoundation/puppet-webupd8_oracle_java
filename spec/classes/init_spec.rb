@@ -11,7 +11,7 @@ describe 'webupd8_oracle_java' do
         it do
           is_expected.to compile
 
-          is_expected.to include_class('apt')
+          is_expected.to contain_class('apt')
 
           is_expected.to contain_apt__ppa('ppa:webupd8team/java')
 
