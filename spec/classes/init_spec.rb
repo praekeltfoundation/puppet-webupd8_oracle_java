@@ -44,7 +44,9 @@ describe 'webupd8_oracle_java' do
           is_expected.to contain_file('/var/cache/debconf/oracle-java9-installer.preseed')
             .with_ensure('present')
             .with_content('oracle-java9-installer shared/accepted-oracle-license-v1-1 select true')
+        end
 
+        it do
           is_expected.to contain_package('oracle-java9-installer')
             .with_ensure('installed')
             .with_responsefile('/var/cache/debconf/oracle-java9-installer.preseed')
@@ -53,7 +55,7 @@ describe 'webupd8_oracle_java' do
               'Apt::Ppa[ppa:webupd8team/java]',
               'Class[apt::update]',
             ])
-          end
+        end
       end
     end
   end
