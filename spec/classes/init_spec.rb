@@ -7,18 +7,18 @@ describe 'webupd8_oracle_java' do
         facts
       end
 
+      it { is_expected.to compile }
+      it { is_expected.to contain_class('apt') }
+      it { is_expected.to contain_apt__ppa('ppa:webupd8team/java') }
+
       describe 'with default parameters' do
         it do
-          is_expected.to compile
-
-          is_expected.to contain_class('apt')
-
-          is_expected.to contain_apt__ppa('ppa:webupd8team/java')
-
           is_expected.to contain_file('/var/cache/debconf/oracle-java8-installer.preseed')
             .with_ensure('present')
             .with_content('oracle-java8-installer shared/accepted-oracle-license-v1-1 select true')
+        end
 
+        it do
           is_expected.to contain_package('oracle-java8-installer')
             .with_ensure('installed')
             .with_responsefile('/var/cache/debconf/oracle-java8-installer.preseed')
