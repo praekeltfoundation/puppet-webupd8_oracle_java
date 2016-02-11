@@ -12,11 +12,6 @@ task :spec_prep => :librarian_spec_prep
 Rake::Task[:lint].clear
 PuppetLint::RakeTask.new(:lint) do |config|
   config.fail_on_warnings = true
-  config.disable_checks = [
-      '80chars',
-      'class_inherits_from_params_class',
-      'autoloader_layout',
-  ]
   config.ignore_paths = ["vendor/**/*.pp", "spec/**/*.pp", "modules/**/*.pp"]
 end
 

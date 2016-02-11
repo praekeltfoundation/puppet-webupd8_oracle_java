@@ -32,7 +32,6 @@ class webupd8_oracle_java (
     ensure       => $ensure,
     responsefile => $responsefile,
     require      => [
-      File[$responsefile],
       Apt::Ppa['ppa:webupd8team/java'],
       Class['apt::update'],
     ],
